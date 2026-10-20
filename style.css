@@ -1,0 +1,17 @@
+body{background: #8b4513;color: #ffe0a3;text-align: center;font-family: 'Times New Roman', Times, serif;
+}
+h1{font-size:36px;}
+/* i do not like putting a thing in many lines so it is in one line*/
+input{ display:none;}
+label{
+    display: inline-block;background: #b96f50;padding:35px 20px;
+    margin: 10px;border: 5px solid #705a2b;
+    border-radius: 8px;cursor:pointer;font-size: 24px;
+}
+
+input:checked+label{border-color: #ffe0a3;transform: translateY(-5px);}
+.results p {display:none;background: #552900;padding:20px;margin:25px auto;
+max-width:350px;border-radius:15px;font-size:23px;}
+#door1:checked ~ .results .prize,
+#door2:checked ~ .results .goat ,
+#door3:checked ~ .results .nothing {display:block;}
